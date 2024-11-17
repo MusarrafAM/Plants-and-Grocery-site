@@ -1,0 +1,57 @@
+.explore-button {
+  box-shadow: 8px 8px 0px black;
+  transition: box-shadow 0.6s, background 0.6s;
+}
+
+
+.explore-button:hover{
+    box-shadow: none;
+    background: black;
+}
+
+#curve, #curve1, #curve2{
+  fill: transparent;
+}
+
+
+/* .heart{
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+  transform-origin: center;
+  background-color: #D6EBDC;
+}
+
+.heart::before, .heart::after{
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #D6EBDC;
+}
+
+.heart::before{
+  left: -150px;
+}
+
+.heart::after{
+  top: -150px;
+} */
+
+/* Utilities */
+.horizontal-center-custom{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Apply styles only on devices with a maximum width of, for example, 768px */
+@media (min-width: 1324px) {
+  .horizontal-center-custom {
+    left: 20%;
+    transform: none;
+  }
+}

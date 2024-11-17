@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link href="dist/output.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+    <!-- FontAwsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="h-20 flex justify-between items-center shadow-lg p-4">
+      <div class="logo cursor-pointer">
+        <img src="assets/logo.PNG" alt="">
+      </div>
+      <div class="navlinks ml-[12rem]">
+        <ul class="hidden lg:display lg:flex gap-6">
+          <a href="index.html"><li>Home</li></a>
+          <li class="font-semibold">Categories</li>
+          <li>Contact</li>
+          <li>Blog</li>
+          <li>Services</li>
+        </ul>
+      </div>
+      <div class="navicons hidden lg:display lg:flex items-center gap-6">
+        <div><img class="rotate90 w-6 cursor-pointer" src="assets/compare.svg" ></div>
+        <div><i class="fa-regular fa-heart cursor-pointer"></i></div>
+        <div class="relative cursor-pointer" ><i class="fa-solid fa-bag-shopping "></i><span class="absolute w-4 h-4 bg-[#F9A502] text-white rounded-full left-3 top-[-5px] text-center text-xs">2  </span></div>
+        <div><i class="fa-solid fa-magnifying-glass px-1.5 border-x-2 border-gray-400 cursor-pointer"></i></div>
+        <div class="text-white bg-[#3CB018] py-2 px-4 rounded-md cursor-pointer hover:text-black duration-300">SIGN IN</div>
+
+      </div>
+      <div class="lg:hidden">
+        <i onclick="onToggleMenu(this)" class="fa-solid fa-bars fa-lg cursor-pointer"></i>
+      </div>
+
+    </nav>
+    <hr />
+
+    <!-- small device nav -->
+    <div class="links absolute lg:hidden top-[-100%]  z-20 pt-10  bg-white min-h-[60vh] w-full duration-300">
+      <!-- Nav Links -->
+      <div class="navlinks text-center">
+        <ul class="flex flex-col gap-4">
+          <a href="index.html"><li >Home</li></a>
+          <li class="font-semibold">Categories</li>
+          <li>Contact</li>
+          <li >Blog</li>
+          <li>Services</li>
+        </ul>
+      </div>
+      <!-- NavIcons -->
+      <div class="navicons flex items-center justify-center gap-6 mt-16 ">
+        <div><img class="rotate90 w-6 cursor-pointer" src="assets/compare.svg" ></div>
+        <div><i class="fa-regular fa-heart cursor-pointer"></i></div>
+        <div class="relative cursor-pointer"><i class="fa-solid fa-bag-shopping "></i><span class="absolute w-4 h-4 bg-[#F9A502] text-white rounded-full left-3 top-[-5px] text-center text-xs">2  </span></div>
+        <div><i class="fa-solid fa-magnifying-glass px-1.5 border-x-2 border-gray-400 cursor-pointer"></i></div>
+        <div class="text-white bg-[#3CB018] py-2 px-4 rounded-md cursor-pointer hover:text-black duration-300">SIGN IN</div>
+
+      </div>
+
+    </div>
+
+    <main class="bg-gray-100">
+        <!-- Hero Section -->
+        <section>
+            <!-- Top -->
+            <div class="md:grid grid-cols-2">
+              <div class="pl-4 md:pl-16 lg:pl-[140px] pt-[50px] md:pt-[120px] text-center md:text-left">
+                <h2 class="text-5xl lg:text-7xl font-semibold lg:max-w-[80%]">A place you eat healthy</h2>
+                <p class="text-lg lg:text-2xl pt-10 pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu eget. Et integer facilisi eget. Lorem ipsum dolor.</p>
+                <button class="bg-[#252525] text-lg text-white px-10 py-3 rounded-full">Explore the menu</button>
+              </div>
+              <div class="pb-20 lg:pl-10 ">
+                <img class="h-[600px] mt-10 mx-auto md:mx-0" src="assets/healthy-1.png">
+              </div>
+            </div>
+
+            <!-- Btootm  -->
+            <div class="lg:grid grid-cols-2 bg-white px-4 md:px-16 lg:pl-[100px] pb-10">
+              <!-- left -->
+              <div class="relative">
+                <div class="lg:absolute pt-10 lg:pt-0 top-[-150px] grid grid-cols-3 gap-6 md:gap-10 lg:gap-6">
+                  <div class="h-[400px] rounded-[100px]">
+                    <img class=" w-full h-full object-cover rounded-[100px]" src="assets/healthy-2.jpg">
+                  </div>
+
+                  <div class="h-[400px]  rounded-full">
+                    <img class="w-full h-full object-cover rounded-[100px]" src="assets/healthy-3.jpg">
+                  </div>
+                  <div class=" h-[400px]  rounded-full">
+                    <img class="w-full h-full object-cover rounded-[100px]" src="assets/healthy-4.jpg">
+                  </div>
+                </div>
+            </div>
+
+              <!-- Right -->
+              <div class="md:ml-[140px] md:mr-[100px] mt-20 lg:mt-0">
+                <div class="w-12 h-[5px] bg-black mt-3"></div>
+                <h5 class="text-2xl py-2">Chef ABC</h5>
+                <p class="md:text-lg pr-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper </p>
+                <div class="grid grid-cols-4 items-center">
+                  <img src="assets/healthy-5.jpg">
+                  <img src="assets/healthy-6.jpg">
+                  <img src="assets/healthy-7.jpg">
+                  <img src="assets/healthy-8.jpg">
+                </div>
+              </div>
+              
+            </div>
+            
+        </section>
+
+        <!-- Find priject -->
+        <section class="mx-4 md:mx-16 my-20 ">
+            <!-- top -->
+            <div class="text-center mb-[120px]">
+                <h3 class="text-5xl lg:text-6xl font-semibold">Find the project you love</h3>
+                <p class="lg:text-lg py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Faucibus in libero risus semper habitant arcu eget. Et integer  <br> facilisi eget diam.Lorem ipsum dolor sit ame,consectetur</p>
+                <button class="bg-[#252525] text-lg text-gray-300 px-8 py-3 rounded-full">Explore</button>
+            </div>
+
+            <!-- bottom -->
+            <div>
+                <div class="relative h-[500px] mb-[40px]">
+                    <!-- 4 titles 1  -->
+                    <div class="absolute horizontal-center-custom top-[-80px] flex items-center justify-center bg-white rounded-[40px] ">
+                        <div class="p-4 md:p-10">
+                            <h3 class="pb-2 font-semibold text-lg">Title 1</h3>
+                            <div class="w-8 h-[0.2rem] bg-black"></div>
+                            <p class="pt-2 text-sm">Lorem ipsum dolor <br> sit amet, consectetur</p>
+                        </div>
+                        <div class="p-4 md:p-10">
+                            <h3 class="pb-2 font-semibold text-lg">Title 1</h3>
+                            <div class="w-8 h-[0.2rem] bg-black"></div>
+                            <p class="pt-2 text-sm">Lorem ipsum dolor <br> sit amet, consectetur</p>
+                        </div>
+                        <div class="p-4 md:p-10">
+                            <h3 class="pb-2 font-semibold text-lg">Title 1</h3>
+                            <div class="w-8 h-[0.2rem] bg-black"></div>
+                            <p class="pt-2 text-sm">Lorem ipsum dolor <br> sit amet, consectetur</p>
+                        </div>
+                        <div class="p-4 md:p-10">
+                            <h3 class="pb-2 font-semibold text-lg">Title 1</h3>
+                            <div class="w-8 h-[0.2rem] bg-black"></div>
+                            <p class="pt-2 text-sm">Lorem ipsum dolor <br> sit amet, consectetur</p>
+                        </div> 
+                    </div>  
+                    <img class="w-[100%] h-[100%] rounded-[30px] object-cover" src="assets/find-1.jpg">
+                </div>
+
+                <div class="md:grid grid-cols-3 gap-[50px]">
+                    <div class="h-[280px] mb-10 md:mb-0">
+                        <img class="w-[100%] h-[100%] rounded-[30px] object-cover " src="assets/find-2.jpg">
+                    </div>
+                    <div class="h-[280px] mb-10 md:mb-0">
+                        <img class="w-[100%] h-[100%] rounded-[30px] object-cover" src="assets/find-3.jpg">
+                    </div>
+                    <div class="h-[280px] mb-10 md:mb-0">
+                        <img class="w-[100%] h-[100%] rounded-[30px] object-cover" src="assets/find-4.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 md:px-16 py-20 bg-white">
+          <!-- Top -->
+          <div class="md:grid grid-cols-2">
+
+            <div class="pt-20 mx-auto lg:mx-0 text-center md:text-left">
+              <h2 class="mx-auto lg:mx-0  text-5xl lg:text-7xl font-semibold pb-2 max-w-[550px] text-center md:text-left">New designs New inspirations</h2>
+              <p class="text-lg lg:text-2xl pt-10 pb-6">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Faucibus in libero risus semper <br> habitant arcu eget. Et integer facilisi eget diam.</p>
+              <button class="bg-[#252525] text-lg text-white px-12 py-4  rounded-full">Explore</button>
+            </div> 
+
+            <div class="relative mt-10 md:mt-0">
+              <!-- first harlf circle -->
+              <div class="absolute left-[215px] lg:top-[15px] w-[40%] h-[100%] lg:h-[75%] rounded-t-full">
+                <img class="w-[100%] h-[100%] object-cover rounded-t-full" src="assets/inspiration-1.jpg">
+              </div>
+              <!-- second harlf circle -->
+              <div class="md:absolute right-0 md:right-[40%] lg:right-0 bottom-[-20px] w-[40%] h-[75%] rounded-t-full">
+                <img class="w-[100%] h-[100%] object-cover rounded-t-full" src="assets/inspiration-2.jpg">
+              </div>
+            </div>  
+          </div>
+
+          <!-- Bottom -->
+          <div class="md:grid grid-cols-3 gap-20 mt-[70px] p-16 bg-[#252525] text-white rounded-[30px]">
+            
+            <div class="text-center md:text-left text-gray-300 pb-20 md:pb-0">
+              <img class="mx-auto md:mx-0 h-[25px] mb-2" src="assets/cloud.png">
+              <h4 class="text-2xl pb-4 font-semibold">Title 1</h4>
+              <p class="text-lg md:pr-16">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="text-center md:text-left text-gray-300 pb-20 md:pb-0">
+              <img class="mx-auto md:mx-0 h-[25px] mb-2" src="assets/cloud.png">
+              <h4 class="text-2xl pb-4 font-semibold">Title 2</h4>
+              <p class="text-lg md:pr-16">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            </div>
+            
+            <div class="text-center md:text-left text-gray-300 pb-20 md:pb-0">
+              <img class="mx-auto md:mx-0 h-[25px] mb-2" src="assets/cloud.png">
+              <h4 class="text-2xl pb-4 font-semibold">Title 3</h4>
+              <p class="text-lg md:pr-16">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- Express feelings -->
+        <section class="px-4 md:px-16 py-14 bg-white">
+          <h2 class="text-5xl lg:text-7xl font-semibold max-w-[800px] text-center lg:text-left">Design is the way how you express the feelings</h2>
+          <div class=" md:grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-[60px]">
+
+            <div>
+              <h3 class="text-3xl font-bold opacity-25 mb-4 text-center md:text-left">01</h3>
+              <p class="text-lg md:text-xl text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="relative w-full h-[390px] my-5 rounded-[20px]">
+                <img class="w-full h-full object-cover rounded-[20px]" src="assets/express-1.jpg">
+                <div class="absolute bottom-8 left-8">
+                  <h3 class="text-xl">Title</h3>
+                  <p class="text-sm pr-[86px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-3xl font-bold opacity-25 mb-4 text-center md:text-left">02</h3>
+              <p class="text-lg md:text-xl text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="relative w-full h-[390px] my-5 rounded-[20px]">
+                <img class="w-full h-full object-cover rounded-[20px]" src="assets/express-2.jpg">
+                <div class="absolute bottom-8 left-8">
+                  <h3 class="text-xl">Title</h3>
+                  <p class="text-sm pr-[86px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-3xl font-bold opacity-25 mb-4 text-center md:text-left">03</h3>
+              <p class="text-lg md:text-xl text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="relative w-full h-[390px] my-5 rounded-[20px]">
+                <img class="w-full h-full object-cover rounded-[20px]" src="assets/express-3.jpg">
+                <div class="absolute bottom-8 left-8">
+                  <h3 class="text-xl">Title</h3>
+                  <p class="text-sm pr-[86px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-3xl font-bold opacity-25 mb-4 text-center md:text-left">04</h3>
+              <p class="text-lg md:text-xl text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="relative w-full h-[390px] my-5 rounded-[20px]">
+                <img class="w-full h-full object-cover rounded-[20px]" src="assets/express-4.jpg">
+                <div class="absolute bottom-8 left-8">
+                  <h3 class="text-xl">Title</h3>
+                  <p class="text-sm pr-[86px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- Walk through -->
+        <section>
+          <div class="text-center pt-[100px]">
+            <h2 class="text-5xl lg:text-7xl font-semibold">Walk through the</h2>
+            <h2 class="text-5xl lg:text-7xl font-semibold pt-2">world with us</h2>
+            <p class="text-lg pt-10 pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Cursus imperdiet sed id elementum. Quam vel aliquam sit <br>vulputate. Faucibus nec gravida ipsum pulvinar vel.</p>
+            <button class="bg-[#252525] text-lg text-white px-10 py-3 rounded-full">Get Started</button>
+          </div>
+          <div class="w-full h-[240px] mt-20">
+            <img class="w-[100%] h-[100%] object-cover" src="assets/walk.jpg" alt="">
+          </div>
+        </section>
+        
+    </main>
+
+    
+    <!-- Footer -->
+    <footer class="bg-[#283646] text-white px-4 lg:px-[140px] pt-[50px] lg:pb-[30px] ">
+      <div class="above grid lg:grid-cols-2 ">
+        <div class="left-side mx-auto lg:mx-0">
+          <div class="w-[180px] h-[60px] bg-blue-400 mx-auto lg:mx-0">
+            <img class=" w-full h-full object-cover opacity-80" src="assets/footer-img.png">
+          </div>
+          <ul class="flex gap-8 py-10">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Customer Care</li>
+            <li>Services</li>
+          </ul>
+        </div>
+
+        <div class="right-side flex flex-col items-center lg:items-end justify-center mt-8 lg:mt-0">
+            <div>
+              <p class="text-center lg:text-left">Get the Freshest news from us</p>
+              <div class="flex pt-4 ">
+                <input class="bg-[#3d5168] pl-5 py-1 rounded-l-full border border-gray-400" type="text" placeholder="Your email address...">
+                <button class=" bg-[#FFBB1C] rounded-full px-6 ml-[-1rem]">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Horizontal Rule -->
+      <div class="border-b-2 border-[#3d5168] mt-10 lg:mt-0"></div>
+
+      <div class="below lg:flex justify-between text-center py-10 pt-14 text-[#7c8999] text-xs">
+        <ul class="flex gap-4 justify-center ">
+          <li class="border-r-2 border-[#3d5168] pr-4">Terms & Conditions</li>
+          <li class="border-r-2 border-[#3d5168] pr-4">Privacy Policy</li>
+          <li class="border-r-2 border-[#3d5168] pr-4">Accessibility</li>
+          <li class="border-r-2 border-[#3d5168] pr-4">Legal</li>
+        </ul>
+
+        <div class="pt-10 lg:pt-0">Copyright 2023 - Solidarity Solar Ltd</div>
+
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      const links = document.querySelector(".links")
+
+      function onToggleMenu(e) {
+        if (e.classList.contains("fa-bars")) {
+        e.classList.remove("fa-bars");
+        e.classList.add("fa-xmark");
+        links.classList.toggle('top-[9%]')
+        } 
+        else if (e.classList.contains("fa-xmark")) {
+        e.classList.remove("fa-xmark");
+        e.classList.add("fa-bars");
+        links.classList.toggle('top-[9%]')
+        
+    }
+  }
+
+    </script>
+
+  </body>
+</html>

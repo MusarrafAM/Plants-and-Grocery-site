@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link href="dist/output.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+    <!-- FontAwsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="h-20 bg-white flex justify-between items-center shadow-lg p-4">
+      <div class="logo cursor-pointer">
+        <img src="assets/logo.PNG" alt="">
+      </div>
+      <div class="navlinks ml-[12rem]">
+        <ul class="hidden lg:display lg:flex gap-6">
+          <li class="font-semibold">Home</li>
+          <a href="second.html"><li >Categories</li></a>
+          <li>Contact</li>
+          <li>Blog</li>
+          <li>Services</li>
+        </ul>
+      </div>
+      <div class="navicons hidden lg:display lg:flex items-center gap-6">
+        <div><img class="rotate90 w-6 cursor-pointer" src="assets/compare.svg" ></div>
+        <div><i class="fa-regular fa-heart cursor-pointer"></i></div>
+        <div class="relative cursor-pointer" ><i class="fa-solid fa-bag-shopping "></i><span class="absolute w-4 h-4 bg-[#F9A502] text-white rounded-full left-3 top-[-5px] text-center text-xs">2  </span></div>
+        <div><i class="fa-solid fa-magnifying-glass px-1.5 border-x-2 border-gray-400 cursor-pointer"></i></div>
+        <div class="text-white bg-[#3CB018] py-2 px-4 rounded-md cursor-pointer hover:text-black duration-300">SIGN IN</div>
+
+      </div>
+
+      <div class="lg:hidden">
+        <i onclick="onToggleMenu(this)" class="fa-solid fa-bars fa-lg cursor-pointer"></i>
+      </div>
+
+      
+    </nav>
+    <hr />
+
+    <!-- small device nav -->
+    <div class="links absolute lg:hidden top-[-100%] z-20 pt-10  bg-white min-h-[60vh] w-full duration-300">
+      <!-- Nav Links -->
+      <div class="navlinks text-center">
+        <ul class="flex flex-col gap-4">
+          <li class="font-semibold">Home</li>
+          <a href="second.html"><li >Categories</li></a>
+          <li>Contact</li>
+          <li >Blog</li>
+          <li>Services</li>
+        </ul>
+      </div>
+      <!-- NavIcons -->
+      <div class="navicons flex items-center justify-center gap-6 mt-16 ">
+        <div><img class="rotate90 w-6 cursor-pointer" src="assets/compare.svg" ></div>
+        <div><i class="fa-regular fa-heart cursor-pointer"></i></div>
+        <div class="relative cursor-pointer"><i class="fa-solid fa-bag-shopping "></i><span class="absolute w-4 h-4 bg-[#F9A502] text-white rounded-full left-3 top-[-5px] text-center text-xs">2  </span></div>
+        <div><i class="fa-solid fa-magnifying-glass px-1.5 border-x-2 border-gray-400 cursor-pointer"></i></div>
+        <div class="text-white bg-[#3CB018] py-2 px-4 rounded-md cursor-pointer hover:text-black duration-300">SIGN IN</div>
+
+      </div>
+
+    </div>
+
+
+
+    <main class="bg-gray-100 ">
+      <!-- Hero Section -->
+      <section>
+      <!-- Landing Page -->
+      <div class="bring-green md:grid grid-cols-2">
+        <!-- left -->
+        <div class="bg-[#e5e5e5] rounded-br-[200px] pl-10 md:pl-4 lg:pl-16 ">
+        <h1 class="text-4xl md:text-4xl lg:text-5xl font-semibold pt-12 md:pt-0 md:mt-20">Bring <span class="text-[#437223]">GREEN</span> to <br> Your home and <br> make you feel <span class="text-[#437223]">BETTER</span></h1>
+          <p class="my-10 text-lg md:text-xl lg:text-2xl">Lorem ipsum dolor sit amet, consectetur <br>
+            adipiscing elit. Cursus imperdiet sed id <br>
+            elementum. Quam vel aliquam sit.</p>
+          <div class="count flex gap-5">
+            <div>
+              <h3 class="pb-2 font-semibold text-lg">124K+</h3>
+              <div class="w-8 h-[0.2rem] bg-black"></div>
+              <p class="pt-2 text-sm">Lorem ipsum <br> consectetur</p>
+            </div>
+            
+            <div>
+              <h3 class="pb-2 font-semibold text-lg">126</h3>
+              <div class="w-8 h-[0.2rem] bg-black"></div>
+              <p class="pt-2 text-sm">Lorem ipsum <br> consectetur</p>
+            </div>
+
+            <div>
+              <h3 class="pb-2 font-semibold text-lg">78K</h3>
+              <div class="w-8 h-[0.2rem] bg-black"></div>
+              <p class="pt-2 text-sm">Lorem ipsum <br> consectetur</p>
+            </div>
+          </div>
+          <button class="text-white text-xl bg-[#437223] px-10 py-3 md:py-4 mt-10 mb-12 rounded-full">Find your plant</button>
+        </div>
+
+        <!-- right -->
+          <div class="relative">
+            <img class="absolute top-4 right-[5%] lg:right-[21%] h-[100px] md:h-[140px]" src="assets/circle-heart-gray.png" alt="">
+
+            <img class="md:absolute md:h-[650px] w-[800px] lg:left-[-100px] " src="assets/home-tree.png">
+          </div>
+        </div>
+        
+        <!-- below landing -->
+        <div class="lg:grid grid-cols-3 gap-6 mt-14 mx-4 md:mx-24 lg:mx-16">
+
+          <div class="flex items-center justify-center border border-black rounded-[20px]">
+            <img class="rounded-full w-20 h-20  mx-6 my-4" src="assets/main-1.png" alt="">
+            <p class="px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus in libero risus</p>
+          </div>
+
+          <div class="flex items-center justify-center border border-black rounded-[20px] my-6 lg:my-0">
+            <img class="rounded-full w-20 h-20 mx-6 my-4" src="assets/main-2.png" alt="">
+            <p class="px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus in libero risus</p>
+          </div>
+
+          <div class="flex items-center justify-center border border-black rounded-[20px]">
+            <img class="rounded-full w-20 h-20 mx-6 my-4" src="assets/main-3.png" alt="">
+            <p class="px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Faucibus in libero risus</p>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- Love Your Plant Section -->
+      <section class="mx-4 lg:mx-16 my-20 mb-[100px] md:mb-[300px] relative ">
+        <div class="md:grid grid-cols-2 rounded-[20px] bg-[#e5e5e5] relative overflow-hidden">
+          <div class="absolute">
+            <img class="ml-[-64px] mt-[-220px] " src="assets/wave.png" alt="vector-02"  />
+          </div>
+          
+          
+          <!-- left -->
+          <div class="relative px-14 pt-[25%] text-center md:text-left">
+            <h1 class="z-20 text-gray-700 text-5xl font-semibold leading-[50px] lg:max-w-[80%] ">Love your plants Take care of yourself</h1>
+            <p class="z-20 text-lg text-gray-700 lg:text-xl pt-10 pb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Faucibus in libero risus <br> semper habitant arcu eget. Et integer.</p>
+            <button class="text-xl explore-button text-white bg-[#333333] mt-10 md:mt-0 px-12 py-3 rounded-full mb-[120px]">
+              Explore all plants
+            </button>
+          </div>
+
+          <!-- right -->
+          <div class="relative flex flex-col items-center justify-end">
+            <div class="absolute w-[55%] h-[80%] rounded-t-full bg-[#D6EBDC]">
+              <!-- right Circle -->
+              <!-- outer -->
+              <div class="absolute right-[-60px] md:right-[-62px] lg:right-[-60px] top-[-5%] md:top-[-4%] lg:top-[-5%] w-[150px] h-[150px] rounded-full border border-black"></div>
+              <!-- inner -->
+              <div class="absolute right-[-14%] md:right-[-18%] lg:right-[-9%] top-[2%] md:top-[1%] lg:top-0 w-[100px] h-[100px] rounded-full border border-black"></div>
+              <!-- Circle Text -->
+              <svg class="absolute right-[-105px] top-[-70px] lg:top-[-75px]" width="200px" height="200px">
+                <path id="curve1" d="M 25 125 A 56 56 0 1 1 25 127"></path>
+                <text class="text">
+                  <textPath href="#curve1">
+                    plant . plant . plant . plant . plant . plant . plant .
+                  </textPath>
+                </text>
+              </svg>
+
+
+              <!-- left Circle -->
+              <!-- outer -->
+              <div class="absolute left-[-65px] bottom-[24%] w-[100px] h-[100px] rounded-full border border-black"></div>
+              <!-- inner -->
+              <div class="absolute left-[-18%] md:left-[-22%] lg:left-[-12%] bottom-[30%] md:bottom-[28%] w-[60px] h-[60px] rounded-full border border-black"></div>
+              <!-- Circle Text -->
+              <svg class="absolute left-[-78px] bottom-[60px] md:bottom-[105px] lg:bottom-[85px]" width="200px" height="200px">
+                <path id="curve2" d="M 25 125 A 37 37 0 1 1 25 127"></path>
+                <text class="text-xs">
+                  <textPath href="#curve2">
+                    plant . plant . plant . plant . plant . plant . plant .
+                  </textPath>
+                </text>
+              </svg>
+
+            </div>
+            <img class="z-10 md:z-0 lg:absolute w-[48%] bottom-[-20%]" src="assets/love-1.png" alt="">
+          </div>
+
+        </div>
+
+        <!-- bottom -->
+        <div class="md:absolute bottom-[-150px] md:grid grid-cols-2 bg-white border border-black rounded-3xl">
+
+          <div class="my-6 pl-10 flex items-center">
+            <div class=" w-[500px] h-[140px]">
+              <img class="w-full h-full object-cover rounded-[20px]" src="assets/love-2.png" alt="">
+            </div>
+            
+            <p class="md:text-lg pl-6 pr-2">Lorem ipsum dolor amet, consectetur adipiscing elit. Faucibus in libero.Lorem ipsum dolor amet, consectetur adipiscing elit. Faucibus in libero</p>
+          </div>
+
+          <div class="my-6 pl-10 mt-16 md:mt-6 flex items-center">
+            <div class=" w-[500px] h-[140px]">
+              <img class="w-full h-full object-cover rounded-[20px]" src="assets/love-3.png" alt="">
+            </div>
+            
+            <p class="md:text-lg pl-6 pr-2">Lorem ipsum dolor amet, consectetur adipiscing elit. Faucibus in libero.Lorem ipsum dolor amet, consectetur adipiscing elit. Faucibus in libero</p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Build your Dream -->
+      <section class="ml-4 lg:ml-16 my-20 mb-[180px] md:mb-[280px]">
+        <div class="md:grid lg:grid-cols-2 gap-10">
+          <!-- left -->
+          <div class="mb-10 md:mb-0">
+            <!-- top -->
+            <div class="text-center lg:text-left">
+              <h3 class="text-5xl font-semibold leading-[50px]" >We build your dream <br> house with our passion</h3>
+              <p class="text-lg lg:text-xl py-6">Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit. Cursus imperdiet sed id elementum. Quam vel <br> aliquam sit vulputate. Faucibus nec gravida ipsum <br> pulvinar vel.</p>
+              <button class="bg-[#333333] text-lg text-gray-300 px-12 py-4 rounded-full">Get Started</button>
+            </div>
+
+            <!-- bottom -->
+            <div class="mt-16">
+              <div class="grid grid-cols-2 gap-10">
+                  <div class="bg-[#C6D9E1] p-6 rounded-[20px]">
+                    <h3 class="font-semibold text-lg pb-2">178K+</h3>
+                    <p class="text-sm md:text-base">Lorem ipsum dolor amet, <br> consectetur adipiscing elit. <br> Faucibus in libero.Lorem ipsum <br> dolor amet,</p>
+                  </div>
+                  <div class="bg-[#e5e5e5] p-6 rounded-[20px]">
+                    <h3 class="font-semibold text-lg pb-2">362</h3>
+                    <p class="text-sm md:text-base">Lorem ipsum dolor amet, <br> consectetur adipiscing elit. <br> Faucibus in libero.Lorem ipsum <br> dolor amet,</p>
+                  </div>
+              </div>
+              <div class="relative flex lg:gap-[8rem] bg-[#e5e5e5] px-6 py-4 rounded-[20px] mt-6">
+                <div >
+                  <h3 class="font-semibold text-lg">Title</h3>
+                  <p class="text-sm md:text-base">Lorem ipsum dolor amet, consectetur <br> adipiscing elit. Faucibus in libero.Lorem <br> ipsum dolor amet. Lorem ipsum dolor amet, <br> consectetur adipiscing elit</p>
+                </div>
+                  <img class="absolute lg:relative right-[4%] md:h-[120px] w-[140px] md:w-[200px]" src="assets/dream-2.png">
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="relative">
+
+              <img class="z-10 absolute h-[140px] top-[-4%] md:top-[-2%] lg:top-[2%] left-[40%] rounded-full bg-white" src="assets/circle-heart-white_prev_ui.png" alt="">
+
+              <div>
+                <img class="lg:absolute object-cover w-full h-full bottom-[-8%]" src="assets/dream-1.jpg">
+              </div>
+
+            <!-- circle -->
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- Discover the beauty -->
+      <section class="mx-4 lg:mx-16 my-20">
+        <div class="grid grid-cols-1 lg:grid-cols-3 ">
+          <!-- Top 1st col -->
+          <div class="text-center md:text-left">
+            <h3 class="text-5xl md:text-4xl lg:text-6xl mx-auto md:mx-0 font-semibold lg:leading-[80px] max-w-[400px]" >Discover the beauty around the world</h3>
+            <p class="text-lg md:text-xl lg:text-2xl py-6">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Faucibus in libero risus semper <br> habitant arcu.</p>
+            <button class="bg-[#252525] text-gray-300 px-10 py-2 rounded-xl">Get Started</button>
+          </div>
+          <!-- Top 2nd col -->
+          <div class="relative">
+            <img class="md:absolute mx-auto w-[380px] h-[440px] object-cover mt-10 md:mt-0 rounded-[20px] top-[-140px] right-0" src="assets/Discover-1.jpg" alt="">
+          </div>
+          <!-- Top 3rd col -->
+          <div >
+            <img class="mx-auto w-[380px] h-[440px] md:ml-[80px] object-cover rounded-[20px] mt-[6rem]" src="assets/Discover-2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-[50px] mt-10">
+          <!-- Bottom 1st col -->
+          <div >
+              <h3 class="text-3xl font-bold opacity-25 mb-4 text-center lg:text-left">01</h3>
+              <div class="h-[280px]">
+                <img class="h-[100%] w-[100%] object-cover rounded-lg" src="assets/Discover-3.jpg" alt="">
+              </div>
+          </div>
+
+          <!-- Bottom 2nd col -->
+          <div >
+            <h3 class="text-3xl font-bold opacity-25 mb-4 text-center lg:text-left">02</h3>
+            <div class="h-[280px] rounded-lg bg-red-500">
+              <img class="h-[100%] w-[100%] object-cover  rounded-lg" src="assets/Discover-4.jpg" alt="">
+            </div>
+        </div>
+          <!-- Bottom 3rd col -->
+          <div >
+            <h3 class="text-3xl font-bold opacity-25 mb-4 text-center lg:text-left">03</h3>
+            <div class="h-[280px] rounded-lg bg-red-500">
+              <img class="h-[100%] w-[100%] object-cover rounded-lg" src="assets/Discover-5.jpg" alt="">
+            </div>
+        </div>
+
+        </div>
+      </section>
+    
+
+
+    
+      <!-- Adventure -->
+      <section class="mx-4 md:mx-16 my-20 lg:mb-[140px]">
+        <div class="lg:grid grid-cols-3">
+          <!-- 1st col -->
+          <div>
+            <!-- top -->
+            <div class="relative lg:pr-[120px] text-center lg:text-left">
+              <!-- star -->
+              <img class="absolute right-0 lg:right-[20%] top-[64%] lg:top-[14%] w-16 h-16" src="assets/star.png" alt="">
+              <h3 class="text-5xl leading-[80px] font-serif" >Adventure Voyage Wandering</h3>
+              <p class="text-lg lg:text-xl py-6 font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu eget. Et integer facilisi. </p>
+              <button class="bg-[#457D61] text-lg text-gray-300 px-10 py-4 rounded-full">Get Started</button>
+            </div>
+            
+
+            <!-- bottom -->
+
+            <div class="relative flex lg:grid grid-cols-2 gap-20 md:gap-[160px] lg:gap-6 mt-20 lg:mt-2 lg:pr-[80px] justify-center ">
+              <div class="lg:absolute top-[100px] h-[270px] w-[150px] rounded-[100px]">
+                <img class="w-full h-full object-cover rounded-[100px]" src="assets/adventure-1.jpg">
+              </div>
+
+              <div class="lg:absolute left-[40%] h-[270px] w-[150px] rounded-[100px]">
+                <img class=" w-full h-full object-cover rounded-[100px]" src="assets/adventure-2.jpg">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 2nd col -->
+          
+          <div class="relative flex items-center justify-center flex-col">
+            <!-- curved text -->
+            <svg class="absolute top-[4%] left-[20%] md:left-[30%] lg:left-[20%]" w="360" h="130">
+              <path id="curve" d="M 0 120 C 0 120, 130 0, 260 120"></path>
+              <text class="text-[30px]" text-anchor="middle">
+                <textPath href="#curve" startOffset="50%">
+                  Plant . Tree . Nature
+                </textPath>
+              </text>
+            </svg>
+            <!-- Circle -->
+            <div class="w-[50%] md:w-[60%] lg:w-[70%] h-full rounded-full mt-[110px]">
+              <img  class="w-full h-full object-cover rounded-full" src="assets/adventure-3.jpg" alt="">
+            </div>
+          </div>
+
+          <!-- 3rd col -->
+          <div class="lg:pl-20">
+            <!-- Top -->
+            <div class="relative flex justify-center lg:grid grid-cols-2 gap-20 md:gap-[160px] mt-20 lg:mt-0 lg:gap-6 ">
+              <!-- star -->
+              <img class="absolute left-0 bottom-[-100px] w-16 h-16" src="assets/star.png" alt="">
+              <div class="h-[270px] w-[150px] rounded-full ">
+                <img class="w-full h-full object-cover rounded-full" src="assets/adventure-4.jpg">
+              </div>
+
+              <div class="lg:absolute right-10 bottom-[-100px] h-[270px] w-[150px] rounded-full">
+                <img class=" w-full h-full object-cover rounded-full" src="assets/adventure-5.jpg">
+              </div>
+            </div>
+
+            <!-- bottom -->
+            <div class="mt-24 text-center lg:text-left">
+              <p class="text-lg lg:text-xl py-6 font-serif">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Faucibus
+                in libero risus semper habitant arcu
+                eget. Et integer facilisi. </p>
+              <h3 class=" lg:pr-[100px] text-5xl leading-[80px] font-serif" >Travel Explore Discover</h3>
+            </div>
+
+          </div>
+          
+        </div>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[#283646] text-white px-4 lg:px-[140px] pt-[50px] lg:pb-[30px] ">
+      <div class="above grid lg:grid-cols-2 ">
+        <div class="left-side mx-auto lg:mx-0">
+          <div class="w-[180px] h-[60px] bg-blue-400 mx-auto lg:mx-0">
+            <img class=" w-full h-full object-cover opacity-80" src="assets/footer-img.png">
+          </div>
+          <ul class="flex gap-8 py-10">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Customer Care</li>
+            <li>Services</li>
+          </ul>
+        </div>
+
+        <div class="right-side flex flex-col items-center lg:items-end justify-center mt-8 lg:mt-0">
+            <div>
+              <p class="text-center lg:text-left">Get the Freshest news from us</p>
+              <div class="flex pt-4 ">
+                <input class="bg-[#3d5168] pl-5 py-1 rounded-l-full border border-gray-400" type="text" placeholder="Your email address...">
+                <button class=" bg-[#FFBB1C] rounded-full px-6 ml-[-1rem]">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Horizontal Rule -->
+      <div class="border-b-2 border-[#3d5168] mt-10 lg:mt-0"></div>
+
+      <div class="below lg:flex justify-between text-center py-10 pt-14 text-[#7c8999] text-xs">
+        <ul class="flex gap-4 justify-center ">
+          <li class="border-r-2 border-[#3d5168] pr-4">Terms & Conditions</li>
+          <li class="border-r-2 border-[#3d5168] pr-4">Privacy Policy</li>
+          <li class="border-r-2 border-[#3d5168] pr-4">Accessibility</li>
+          <li class="border-r-2 border-[#3d5168] pr-4">Legal</li>
+        </ul>
+
+        <div class="pt-10 lg:pt-0">Copyright 2023 - Solidarity Solar Ltd</div>
+
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      const links = document.querySelector(".links")
+
+      function onToggleMenu(e) {
+        if (e.classList.contains("fa-bars")) {
+        e.classList.remove("fa-bars");
+        e.classList.add("fa-xmark");
+        links.classList.toggle('top-[9%]')
+        } 
+        else if (e.classList.contains("fa-xmark")) {
+        e.classList.remove("fa-xmark");
+        e.classList.add("fa-bars");
+        links.classList.toggle('top-[9%]')
+        
+    }
+  }
+
+    </script>
+
+  </body>
+</html>
